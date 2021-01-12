@@ -9,9 +9,19 @@ body {
   font-family: sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
 a {
   color: gray;
   text-decoration: none;
+  margin-right: 30px;
+  transition: all 0.2s linear;
 }
 
 a:hover {
@@ -35,13 +45,81 @@ header {
 /* | Sezione menu sx */
 .sx_nav {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo a img {
+  width: 120px;
+}
+
+.sx_nav_menu {
 }
 
 /* | Sezione menu destra */
 .dx_nav {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.logo a img {
-  width: 120px;
+.dropdown {
+  position: relative;
+  padding: 10px 0;
+}
+
+.drop_down {
+  position: absolute;
+  top: 30px;
+  transform: translateX(-25%);
+  border-radius: 10px;
+  box-shadow: 0 0 4px #2385c7;
+  display: none;
+}
+
+.drop_down.active {
+  display: block;
+}
+
+.drop_down ul li {
+  display: block;
+  text-align: center;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.drop_down ul li:hover {
+  background-color: #2385c7;
+  border-radius: 10px;
+}
+
+.drop_down ul li:hover a {
+  color: #fff;
+}
+
+.drop_down ul li a {
+  margin: 0;
+}
+
+.cta_nav a:first-child::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.6em;
+  margin-left: 2px;
+  transform: rotate(90deg);
+}
+
+.cta_nav .btn {
+  font-weight: bold;
+  background-color: #eb008d;
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.cta_nav .btn:hover {
+  background-color: #2385c7;
 }
