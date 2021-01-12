@@ -1,0 +1,47 @@
+/* | GENERAL | */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+/* | HEADER | */
+header {
+  height: 20vh;
+}
+
+.container {
+  width: 1300px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* | Sezione menu sx */
+.sx_nav {
+  display: flex;
+}
+
+/* | Sezione menu destra */
+.dx_nav {
+  display: flex;
+}
+
+.logo a img {
+  width: 120px;
+}
