@@ -75,18 +75,25 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 4px #2385c7;
   display: none;
+  margin-top: 5px;
 }
 
-.drop_down.active {
+.drop_down.active,
+.drop_down.language.active {
   display: block;
 }
 
-.drop_down ul li {
+.drop_down ul li,
+.drop_down.language {
   display: block;
-  text-align: center;
-  padding: 20px 30px;
+  min-width: 150px;
+  padding: 20px;
   cursor: pointer;
   transition: all 0.2s linear;
+}
+
+.drop_down.language {
+  display: none;
 }
 
 .drop_down ul li:hover {
@@ -102,7 +109,35 @@ header {
   margin: 0;
 }
 
-.cta_nav a:first-child::after {
+.drop_down ul li a.new,
+.drop_down ul li a.beta {
+  position: relative;
+}
+
+.drop_down ul li a.new::after {
+  content: "Nuovo";
+  font-size: 0.8em;
+  position: absolute;
+  top: -10px;
+  font-weight: bold;
+  color: #eb008d;
+}
+
+.drop_down ul li a.beta::after {
+  content: "Beta";
+  font-size: 0.8em;
+  position: absolute;
+  top: -10px;
+  font-weight: bold;
+  color: #eb008d;
+}
+
+.cta_nav {
+  display: flex;
+  align-items: center;
+}
+
+.cta_nav a.arrow::after {
   content: "\f078";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;

@@ -1,8 +1,11 @@
 $(document).ready(function(){
 
-    var dropDownMenu = $('.dropdown');
+    
+        $('.cta_nav .dropdown').click(function(){
+            $(this).children('.drop_down:language').toggleClass('active');
+        });
 
-    dropDownMenu.hover(function(){
+    $('.dropdown').hover(function(){
         $(this).children('.drop_down').toggleClass('active');
     });
 

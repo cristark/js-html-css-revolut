@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Revolut Dropdown Menu</title>
     <!-- Favicon -->
-
+    <link rel="shortcut icon" href="https://www.revolut.com/favicon-32x32.png?v=9888e6b82e44f49eeff2872eb4b64175" type="image/png">
     <!-- Link FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Link Google Font -->
 
     <!-- Link jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <!-- Link foglio Framework Personale (optional) -->
-    
     <!-- Link foglio di stile personale -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -44,9 +42,9 @@
                 <div class="dx_nav_menu">
                     <ul>
                         <li><a href="#">Tariffazione</a></li>
-                        <li class="dropdown">
-                            <a href="#">Prodotti</a>
-                            <div class="drop_down products">
+                        <li class="dropdown accounts">
+                            <a href="#">Accounts</a>
+                            <div class="drop_down">
                                 <ul>
                                     <li><a href="#">Standard</a></li>
                                     <li><a href="#">Premium</a></li>
@@ -54,25 +52,58 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown products">
+                            <a href="#">Prodotti</a>
+                            <div class="drop_down">
+                                <ul>
+                                    <li><a href="#">Trasferimenti di denaro</a></li>
+                                    <li><a href="#">Salvadanaio</a></li>
+                                    <li><a href="#">Gestione Budget</a></li>
+                                    <li><a class="beta" href="#">Perk</a></li>
+                                    <li><a href="#">Criptovaluta</a></li>
+                                    <li><a href="#">Assicurazione Smartphone</a></li>
+                                    <li><a href="#">Assicurazione medica internazionale</a></li>
+                                    <li><a href="#">API di Open Banking</a></li>
+                                    <li><a class="new" href="#">Apple Pay</a></li>
+                                    <li><a class="new" href="#">Donazioni</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown business">
                             <a href="#">Azienda</a>
-                            <div class="drop_down business">
+                            <div class="drop_down">
                                 <ul>
                                     <li><a href="#">Chi siamo</a></li>
                                     <li><a href="#">Blog</a></li>
                                     <li><a href="#">Lavora con noi</a></li>
-                                    <li><a href="#">Affiliates</a></li>
-                                    <li><a href="#">Influencers</a></li>
+                                    <li><a class="new" href="#">Affiliates</a></li>
                                     <li><a href="#">Contatto</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Aiuto</a></li>
+                        <li class="dropdown help">
+                            <a href="#">Aiuto</a>
+                            <div class="drop_down">
+                                <ul>
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Centro Assistenza</a></li>
+                                    <li><a href="#">Security</a></li>
+                                    <li><a href="#">Stato di Sistema</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="cta_nav">
-                    <a href="#">IT</a>
+                    <div class="dropdown">
+                        <a class="arrow" href="#">IT</a>
+                        <div class="drop_down language">
+                            <div><a href="#">Italiano</a></div>
+                            <div><a href="#">English</a></div>
+                            <div><a href="#">Spanish</a></div>
+                        </div>
+                    </div>
                     <a class="btn" href="#">Scarica l'App</a>
                 </div>
             </nav>
