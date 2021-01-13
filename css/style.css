@@ -75,7 +75,7 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 4px #2385c7;
   display: none;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .drop_down.active,
@@ -83,13 +83,36 @@ header {
   display: block;
 }
 
-.drop_down ul li,
-.drop_down.language {
+.drop_down ul {
   display: block;
   min-width: 150px;
   padding: 20px;
   cursor: pointer;
   transition: all 0.2s linear;
+}
+
+.drop_down ul.animate {
+  animation: slideDown 0.3s 0.2s;
+}
+
+/* @keyframes slideDown {
+  0% {
+  }
+} */
+
+.drop_down.language {
+  position: absolute;
+  top: 60px;
+  min-width: 100px;
+  padding: 10px 0 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.drop_down.language a {
+  margin-top: 20px;
+  margin: 0;
 }
 
 .drop_down.language {
@@ -150,6 +173,7 @@ header {
   font-weight: bold;
   background-color: #eb008d;
   padding: 15px 25px;
+  margin-left: 10px;
   border-radius: 25px;
   color: #fff;
   transition: all 0.2s ease;
